@@ -1,17 +1,26 @@
 <head>
   <meta charset="utf-8">
-  <title> WEB </title>
+  <title> Escape the shit out of here </title>
 </head>
 <body>
-  <h1>WEB</h1>
-  <h2>"웹이 거대한 네트워크 속에서 개별적으로 존재하는 노드(node)로 이뤄진다는 사실을 되새긴다면, 자신만의 웹사이트를 운영하는 것만으로도 우리는 웹을 원래 상태로 되돌릴 수 있다."(민구홍, [새로운 질서])</h2>
-  <br>아래는 순서가 달린 목차예요.
-  <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-  </ol>
-위 세 가지를 배우고 나면 많이 달라져있을 겁니다.
-    <p style="margin:40px"><img src="damdong.jpg">
+  <h1>제대 D </h1>
+  <div id="d-day"></div>
+  //디데이 종료 일자 설정 var countDownDate = new Date("May 9, 2017 06:00:00").getTime(); 
+  //1초마다 갱신되도록 함수 생성,실행 var x = setInterval(function() { 
+    // 오늘 날짜 등록 
+     var now = new Date().getTime(); 
+    // 종료일자에서 현재일자를 뺀 시간 
+    var distance = countDownDate - now; 
+  
+    // 각 변수에 일, 시, 분, 초를 등록 
+    var d = Math.floor(distance / (1000 * 60 * 60 * 24));  
+    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+    var s = Math.floor((distance % (1000 * 60)) / 1000); 
+  
+    //id가 d-day인 HTML코드에 내용 삽입 
+    document.getElementById("d-day").innerHTML = "디데이까지 " + d +"일 " + h + "시간 " + m + "분 " + s + "초 남았습니다."; });
+
+  <img src="damdong.jpg">
 
 </body>
