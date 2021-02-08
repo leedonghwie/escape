@@ -3,24 +3,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
   <title> Escape the shit out of here </title>
 </head>
-<body style="color:#71f9fc; background-color:#B50778;">
+<body style="color:#71f9fc; background-color:#B50778; text-align:center;">
   <br>
-  <p style="text-align:center;"><h1><div id="d-day"></div></h1></p>
-  <script> 
+  <p><h1><div id="d-day"></div></h1></p>
+  <p><img src="damdong.jpg" class="center"></p>
+  <p><a href="http://donghwilee.com>블로그로</a></p>
+
+<script> 
   var countDownDate = new Date("June 30, 2021 18:00:00").getTime(); 
    var x = setInterval(function() { 
     var now = new Date().getTime(); 
     var distance = countDownDate - now; 
-  
-    var d = Math.floor(distance / (1000 * 60 * 60 * 24));  
-    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
-    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
-    var s = Math.floor((distance % (1000 * 60)) / 1000); 
-  
+      var d = Math.floor(distance / (1000 * 60 * 60 * 24));  
+      var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+      var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+      var s = Math.floor((distance % (1000 * 60)) / 1000); 
     document.getElementById("d-day").innerHTML = "탈출까지 " + d +"일 " + h + "시간 " + m + "분 " + s + "초"; });
   </script>
-  
-  <p><img src="damdong.jpg" class="center"></p>  
-<p><a href="http://donghwilee.com>블로그로</a></p>
 
 </body>
